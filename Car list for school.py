@@ -1,17 +1,20 @@
-car = {
-    "toyota supra": "2019",
-        "color1": "white, red, black",
-    "nissan nismo 370z": "2009",
-        "color2": "white, red ",
-    "audi A8": "2006",
-        "color3": "grey, black, white, red",
+cars = {
+  "car1" : {
+    "name" : "Nissan nismo 370z",
+    "color": "red",
+    "year" : "2009"
+  },
+  "car2" : {
+    "name" : "Toyota supra",
+    "color": "black",
+    "year" : "2020"
+  },
+  "car3" : {
+    "name" : "Koenisegg agera",
+    "color": "white and black",
+    "year" : "2011"
+  }
 }
-
-
-
-
-
-
-
-for x in car:
-    print(car[x])
+for tag, g in cars.items():
+    if g['year'] == '2009':
+        print(g['name'])
